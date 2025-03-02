@@ -1,0 +1,173 @@
+.classifier {
+    width: 1380px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 54px 20px 32px 20px;
+}
+
+.classifier__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.classifier__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.classifier__main {
+    background-color: var(--surface-secondary);
+    height: 580px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+}
+
+.classifier__text {
+    border-right: 1px solid var(--surface-tertiary);
+    padding: 36px 36px 24px 36px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.classifier__textarea {
+    font: inherit;
+    line-height: 150%;
+    color: var(--text-secondary);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.classifier__textarea::placeholder {
+    color: var(--text-tertiary);
+}
+
+.classifier__categories {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+    padding: 24px 24px 0px 24px;
+    overflow: hidden;
+}
+
+.classifier__input {
+    border-bottom: 1px solid var(--surface-tertiary);
+    display: flex;
+    gap: 8px;
+    padding: 12px 4px;
+}
+
+.classifier__input input {
+    width: 100%;
+    font: inherit;
+    line-height: 150%;
+    color: var(--text-secondary);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.classifier__input input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.classifier__tags {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: scroll;
+}
+
+.classifier__tags > *:last-child {
+    margin-bottom: 24px;
+}
+
+.classifier__tag {
+    color: var(--accent-primary);
+    background-color: var(--accent-secondary);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-primary);
+}
+
+.classifier__actions {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.classifier__actions button {
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.classifier__footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classifier__counter {
+    color: var(--text-tertiary);
+}
+
+.classifier__action {
+    background-color: var(--accent-primary);
+    color: #FFFFFF;
+    padding: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 8px;
+}
+
+@media (max-width: 940px) {
+    .classifier {
+        padding: 32px 16px 16px 16px;
+    }
+
+    .classifier__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .classifier__text {
+        height: 360px;
+        border-right: none;
+        border-bottom: 1px solid var(--surface-tertiary);
+        padding: 24px;
+    }
+
+    .classifier__actions,
+    .classifier__counter {
+        display: none;
+    }
+
+    .classifier__action {
+        width: 100%;
+    }
+
+    .classifier__categories {
+        overflow: visible;
+        padding-bottom: 24px;
+    }
+
+    .classifier__tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .classifier__tags > *:last-child {
+        margin-bottom: 0;
+    }
+}

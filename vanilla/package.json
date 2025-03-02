@@ -1,0 +1,13 @@
+{
+    "name": "reduckter",
+    "version": "1.0.0",
+    "description": "Client-Side Text Editor",
+    "scripts": {
+        "start": "parcel ./src/pages/*.html",
+        "build": "parcel build ./src/pages/*.html"
+    },
+    "author": "Nikita Liapin",
+    "devDependencies": {
+        "parcel": "^2.13.3"
+    }
+}

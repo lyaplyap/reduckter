@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--accent-primary);
+}
+
+:root {
+    /* Text */
+    --text-primary: #313E4C;
+    --text-secondary: #57616A;
+    --text-tertiary: #B9BDC1;
+    /* Background */
+    --surface-primary: #F5F7FB;
+    --surface-secondary: #FFFFFF;
+    --surface-tertiary: #EDEDED;
+    /* Brand */
+    --accent-primary: #3C86F6;
+    --accent-secondary: #F2F9FD;
+}
+
+html, body {
+    font-family: 'Nunito Sans', 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: var(--text-primary);
+    background-color: var(--surface-primary);
+    height: 100%;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: var(--text-secondary);
+    min-height: 36px;
+}
+
+.tab--active {
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.tabs {
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--surface-tertiary);
+}
+
+@media (max-width: 940px) {
+    .tabs {
+        height: 54px;
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
