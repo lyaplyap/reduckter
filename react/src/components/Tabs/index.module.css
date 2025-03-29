@@ -1,0 +1,30 @@
+.tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: var(--text-secondary);
+    min-height: 36px;
+}
+
+.activeTab {
+    color: var(--accent-primary);
+    box-shadow: inset 0px -2px #3C86F6;
+}
+
+.tabs {
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--surface-tertiary);
+}
+
+@media (max-width: 940px) {
+    .tabs {
+        height: 54px;
+    }
+}

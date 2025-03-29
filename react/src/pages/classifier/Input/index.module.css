@@ -1,0 +1,143 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main {
+    background-color: var(--surface-secondary);
+    height: 580px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+}
+
+.text {
+    border-right: 1px solid var(--surface-tertiary);
+    padding: 36px 36px 24px 36px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.textarea {
+    font: inherit;
+    line-height: 150%;
+    color: var(--text-secondary);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.textarea::placeholder {
+    color: var(--text-tertiary);
+}
+
+.categories {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+    padding: 24px 24px 0px 24px;
+    overflow: hidden;
+}
+
+.input {
+    border-bottom: 1px solid var(--surface-tertiary);
+    display: flex;
+    gap: 8px;
+    padding: 12px 4px;
+}
+
+.input input {
+    width: 100%;
+    font: inherit;
+    line-height: 150%;
+    color: var(--text-secondary);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.input input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: scroll;
+}
+
+.tags > *:last-child {
+    margin-bottom: 24px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.actions button {
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter {
+    color: var(--text-tertiary);
+}
+
+.action {
+    background-color: var(--accent-primary);
+    color: #FFFFFF;
+    padding: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 8px;
+}
+
+@media (max-width: 940px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        height: 360px;
+        border-right: none;
+        border-bottom: 1px solid var(--surface-tertiary);
+        padding: 24px;
+    }
+
+    .actions,
+    .counter {
+        display: none;
+    }
+
+    .action {
+        width: 100%;
+    }
+
+    .categories {
+        overflow: visible;
+        padding-bottom: 24px;
+    }
+
+    .tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .tags > *:last-child {
+        margin-bottom: 0;
+    }
+}
+

@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classifier {
+    width: 1380px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 54px 20px 32px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+@media (max-width: 940px) {
+    .classifier {
+        padding: 32px 16px 16px 16px;
+    }
+}

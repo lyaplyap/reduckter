@@ -1,0 +1,11 @@
+.tag {
+    color: var(--accent-primary);
+    background-color: var(--accent-secondary);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-primary);
+}

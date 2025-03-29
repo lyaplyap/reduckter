@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--accent-primary);
+}
+
+:root {
+    /* Text */
+    --text-primary: #313E4C;
+    --text-secondary: #57616A;
+    --text-tertiary: #B9BDC1;
+    /* Background */
+    --surface-primary: #F5F7FB;
+    --surface-secondary: #FFFFFF;
+    --surface-tertiary: #EDEDED;
+    /* Brand */
+    --accent-primary: #3C86F6;
+    --accent-secondary: #F2F9FD;
+}
+
+html, body {
+    font-family: 'Nunito Sans', 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: var(--text-primary);
+    background-color: var(--surface-primary);
+    height: 100%;
+}
